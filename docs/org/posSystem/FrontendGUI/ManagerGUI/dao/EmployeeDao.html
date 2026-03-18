@@ -85,6 +85,11 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">EmployeeDao</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Data Access Object (DAO) for performing CRUD operations on Employee records.
+
+This class provides methods for retrieving, creating, updating, and deleting
+employees from the database. It also handles password hashing, ID generation,
+and mapping ResultSet rows into Employee model objects.</div>
 </div>
 </section>
 <section class="summary">
@@ -115,22 +120,34 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#create(org.posSystem.FrontendGUI.ManagerGUI.model.Employee)" class="member-name-link">create</a><wbr>(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;e)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates a new employee record in the database.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deactivate(int)" class="member-name-link">deactivate</a><wbr>(int&nbsp;employeeNo)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Deletes an employee from the database.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findAll()" class="member-name-link">findAll</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves all employees from the database, ordered by employee number.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findByEmail(java.lang.String)" class="member-name-link">findByEmail</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;email)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Finds an employee by their email address.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPasswordHash(int)" class="member-name-link">getPasswordHash</a><wbr>(int&nbsp;employeeNo)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Retrieves the stored password hash for a given employee.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#update(org.posSystem.FrontendGUI.ManagerGUI.model.Employee)" class="member-name-link">update</a><wbr>(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;e)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Updates an existing employee's information in the database.</div>
+</div>
 </div>
 </div>
 </div>
@@ -170,9 +187,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&gt;</span>&nbsp;<span class="element-name">findAll</span>()
                        throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Retrieves all employees from the database, ordered by employee number.</div>
 <dl class="notes">
+<dt>Returns:</dt>
+<dd>A list of all Employee objects stored in the database.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>
@@ -183,9 +203,20 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;e)</span>
             throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Creates a new employee record in the database.
+
+Behavior:
+<ul>
+  <li>Automatically generates the next available employee number.</li>
+  <li>Splits the full name into first and last name.</li>
+  <li>Uses a temporary password hash if provided; otherwise generates a default BCrypt hash.</li>
+  <li>Inserts the new employee into the database and updates the Employee object's ID.</li>
+</ul></div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>e</code> - The Employee object containing the data to insert.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>
@@ -196,9 +227,18 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">update</span><wbr><span class="parameters">(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;e)</span>
             throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Updates an existing employee's information in the database.
+
+Behavior:
+<ul>
+  <li>Updates first name, last name, role, and email.</li>
+  <li>If a temporary password hash is provided, updates the password as well.</li>
+</ul></div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>e</code> - The Employee object containing updated values.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>
@@ -209,9 +249,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deactivate</span><wbr><span class="parameters">(int&nbsp;employeeNo)</span>
                 throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Deletes an employee from the database.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>employeeNo</code> - The employee number of the employee to remove.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>
@@ -222,9 +265,14 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a></span>&nbsp;<span class="element-name">findByEmail</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;email)</span>
                      throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Finds an employee by their email address.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>email</code> - The email to search for.</dd>
+<dt>Returns:</dt>
+<dd>The matching Employee, or null if no match is found.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>
@@ -235,9 +283,14 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getPasswordHash</span><wbr><span class="parameters">(int&nbsp;employeeNo)</span>
                        throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></span></div>
+<div class="block">Retrieves the stored password hash for a given employee.</div>
 <dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>employeeNo</code> - The employee number whose password hash is requested.</dd>
+<dt>Returns:</dt>
+<dd>The stored password hash, or null if no record exists.</dd>
 <dt>Throws:</dt>
-<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html" title="class or interface in java.sql" class="external-link">SQLException</a></code> - If a database access error occurs.</dd>
 </dl>
 </div>
 </section>

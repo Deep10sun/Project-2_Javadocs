@@ -80,6 +80,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">LoginController</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Handles the login logic for both managers and cashiers.
+
+This controller validates user credentials, checks stored password hashes
+(supporting both BCrypt and plain text), and loads the appropriate dashboard
+based on the employee's role. It interacts with the EmployeeDao to retrieve
+user information and manages scene transitions to the Manager or Cashier UI.</div>
 </div>
 </section>
 <section class="summary">

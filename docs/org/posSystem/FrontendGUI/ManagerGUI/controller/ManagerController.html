@@ -115,23 +115,37 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#generateReport()" class="member-name-link">generateReport</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Runs the report generation process using the ReportTabHelper.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#goToCashierView()" class="member-name-link">goToCashierView</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Opens the Cashier view and passes the manager's info so the cashier
+screen knows who is logged in.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initialize()" class="member-name-link">initialize</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Initializes all tabs in the Manager view.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#logout()" class="member-name-link">logout</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Logs the manager out and returns to the login screen.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#openInventoryGUI()" class="member-name-link">openInventoryGUI</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Opens the Inventory Management window in a new stage.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setManagerInfo(java.lang.String,int)" class="member-name-link">setManagerInfo</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  int&nbsp;id)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Stores the manager's name and ID after login so it can be passed to
+other screens like the Cashier view.</div>
+</div>
 </div>
 </div>
 </div>
@@ -170,6 +184,9 @@ loadScripts(document, 'script');</script>
 <h3>initialize</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initialize</span>()</div>
+<div class="block">Initializes all tabs in the Manager view. This includes setting up
+the employee table, menu item table, search filters, and report tab.
+This method is automatically called by JavaFX after loading the FXML.</div>
 </div>
 </section>
 </li>
@@ -179,6 +196,13 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setManagerInfo</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  int&nbsp;id)</span></div>
+<div class="block">Stores the manager's name and ID after login so it can be passed to
+other screens like the Cashier view.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the manager's name</dd>
+<dd><code>id</code> - the manager's ID</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -187,6 +211,7 @@ loadScripts(document, 'script');</script>
 <h3>logout</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">logout</span>()</div>
+<div class="block">Logs the manager out and returns to the login screen.</div>
 </div>
 </section>
 </li>
@@ -195,6 +220,8 @@ loadScripts(document, 'script');</script>
 <h3>goToCashierView</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">goToCashierView</span>()</div>
+<div class="block">Opens the Cashier view and passes the manager's info so the cashier
+screen knows who is logged in.</div>
 </div>
 </section>
 </li>
@@ -203,6 +230,7 @@ loadScripts(document, 'script');</script>
 <h3>openInventoryGUI</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">openInventoryGUI</span>()</div>
+<div class="block">Opens the Inventory Management window in a new stage.</div>
 </div>
 </section>
 </li>
@@ -211,6 +239,7 @@ loadScripts(document, 'script');</script>
 <h3>generateReport</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">generateReport</span>()</div>
+<div class="block">Runs the report generation process using the ReportTabHelper.</div>
 </div>
 </section>
 </li>

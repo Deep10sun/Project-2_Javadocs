@@ -95,6 +95,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Employee</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents an employee within the POS system.
+
+This model stores identifying information such as name, role, email,
+hire date, and active status. It is used throughout the application
+for displaying employee data, performing authentication, and managing
+employee records in the database.</div>
 </div>
 </section>
 <section class="summary">
@@ -209,6 +215,10 @@ loadScripts(document, 'script');</script>
 <h3>getId</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getId</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's unique ID.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -217,6 +227,10 @@ loadScripts(document, 'script');</script>
 <h3>setId</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setId</span><wbr><span class="parameters">(int&nbsp;id)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>id</code> - The employee's unique ID.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -225,6 +239,10 @@ loadScripts(document, 'script');</script>
 <h3>getUsername</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getUsername</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's username.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -233,6 +251,10 @@ loadScripts(document, 'script');</script>
 <h3>setUsername</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setUsername</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;u)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>u</code> - The employee's username.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -241,6 +263,10 @@ loadScripts(document, 'script');</script>
 <h3>getFullName</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getFullName</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's full name.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -249,6 +275,10 @@ loadScripts(document, 'script');</script>
 <h3>setFullName</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setFullName</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;n)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>n</code> - The employee's full name.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -257,6 +287,10 @@ loadScripts(document, 'script');</script>
 <h3>getRole</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRole</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's role.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -265,6 +299,10 @@ loadScripts(document, 'script');</script>
 <h3>setRole</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setRole</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;r)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>r</code> - The employee's role (e.g., MANAGER or CASHIER).</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -273,6 +311,10 @@ loadScripts(document, 'script');</script>
 <h3>getEmail</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getEmail</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's email address.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -281,6 +323,10 @@ loadScripts(document, 'script');</script>
 <h3>setEmail</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setEmail</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;e)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>e</code> - The employee's email address.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -289,6 +335,10 @@ loadScripts(document, 'script');</script>
 <h3>getHireDate</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a></span>&nbsp;<span class="element-name">getHireDate</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The employee's hire date.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -297,6 +347,10 @@ loadScripts(document, 'script');</script>
 <h3>setHireDate</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setHireDate</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html" title="class or interface in java.time" class="external-link">LocalDate</a>&nbsp;d)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>d</code> - The employee's hire date.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -305,6 +359,10 @@ loadScripts(document, 'script');</script>
 <h3>isActive</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isActive</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>True if the employee is active.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -313,6 +371,10 @@ loadScripts(document, 'script');</script>
 <h3>setActive</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setActive</span><wbr><span class="parameters">(boolean&nbsp;a)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>a</code> - Whether the employee is active.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -321,6 +383,10 @@ loadScripts(document, 'script');</script>
 <h3>getTempPasswordHash</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getTempPasswordHash</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A temporary password hash used during password updates.</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -329,6 +395,10 @@ loadScripts(document, 'script');</script>
 <h3>setTempPasswordHash</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTempPasswordHash</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;tempPasswordHash)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>tempPasswordHash</code> - A temporary password hash to be applied on update.</dd>
+</dl>
 </div>
 </section>
 </li>

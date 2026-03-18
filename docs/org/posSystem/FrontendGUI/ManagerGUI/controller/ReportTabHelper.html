@@ -118,16 +118,25 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#exportReportCSV()" class="member-name-link">exportReportCSV</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Saves the current text report as a CSV file in the user's Downloads folder.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#generateReport()" class="member-name-link">generateReport</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Generates the selected report based on the date range you select.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#init()" class="member-name-link">init</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets up the report tab by adding report types to the dropdown and
+loading inventory items for the chart.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#printReport()" class="member-name-link">printReport</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">For printing, but this method just shows a message saying report would be printed.</div>
+</div>
 </div>
 </div>
 </div>
@@ -155,6 +164,15 @@ loadScripts(document, 'script');</script>
  javafx.scene.control.TextArea&nbsp;reportPreview,
  javafx.scene.layout.VBox&nbsp;chartContainer,
  javafx.scene.control.ComboBox&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;inventoryItemSelector)</span></div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>reportTypeCombo</code> - dropdown for choosing the report type</dd>
+<dd><code>startDate</code> - date picker for the start date</dd>
+<dd><code>endDate</code> - date picker for the end date</dd>
+<dd><code>reportPreview</code> - text area where text reports are shown</dd>
+<dd><code>chartContainer</code> - container where charts are displayed</dd>
+<dd><code>inventoryItemSelector</code> - dropdown for filtering inventory usage charts</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -171,6 +189,8 @@ loadScripts(document, 'script');</script>
 <h3>init</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">init</span>()</div>
+<div class="block">Sets up the report tab by adding report types to the dropdown and
+loading inventory items for the chart.</div>
 </div>
 </section>
 </li>
@@ -179,6 +199,8 @@ loadScripts(document, 'script');</script>
 <h3>generateReport</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">generateReport</span>()</div>
+<div class="block">Generates the selected report based on the date range you select. This method decides
+which one to show and updates the UI.</div>
 </div>
 </section>
 </li>
@@ -187,6 +209,8 @@ loadScripts(document, 'script');</script>
 <h3>exportReportCSV</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">exportReportCSV</span>()</div>
+<div class="block">Saves the current text report as a CSV file in the user's Downloads folder.
+If no report is shown, an error message appears.</div>
 </div>
 </section>
 </li>
@@ -195,6 +219,7 @@ loadScripts(document, 'script');</script>
 <h3>printReport</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">printReport</span>()</div>
+<div class="block">For printing, but this method just shows a message saying report would be printed.</div>
 </div>
 </section>
 </li>

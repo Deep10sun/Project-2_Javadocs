@@ -112,13 +112,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getResult()" class="member-name-link">getResult</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Validates the form and returns an Employee object with the updated values.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#initialize()" class="member-name-link">initialize</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads the available employee roles into the dropdown menu.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setEmployee(org.posSystem.FrontendGUI.ManagerGUI.model.Employee)" class="member-name-link">setEmployee</a><wbr>(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;existing)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Fills the form with an existing employee's information so it can be edited.</div>
+</div>
 </div>
 </div>
 </div>
@@ -157,6 +163,7 @@ loadScripts(document, 'script');</script>
 <h3>initialize</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">initialize</span>()</div>
+<div class="block">Loads the available employee roles into the dropdown menu.</div>
 </div>
 </section>
 </li>
@@ -165,6 +172,12 @@ loadScripts(document, 'script');</script>
 <h3>setEmployee</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setEmployee</span><wbr><span class="parameters">(<a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a>&nbsp;existing)</span></div>
+<div class="block">Fills the form with an existing employee's information so it can be edited.
+If the employee is new or does not exist (null), the form is used to add a new employee.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>existing</code> - the employee being edited, or null if adding a new one</dd>
+</dl>
 </div>
 </section>
 </li>
@@ -173,6 +186,14 @@ loadScripts(document, 'script');</script>
 <h3>getResult</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../model/Employee.html" title="class in org.posSystem.FrontendGUI.ManagerGUI.model">Employee</a></span>&nbsp;<span class="element-name">getResult</span>()</div>
+<div class="block">Validates the form and returns an Employee object with the updated values.
+
+<p> If the password fields are filled in, the password is hashed before
+being stored in the Employee object.</p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the completed Employee object or null if validation fails</dd>
+</dl>
 </div>
 </section>
 </li>

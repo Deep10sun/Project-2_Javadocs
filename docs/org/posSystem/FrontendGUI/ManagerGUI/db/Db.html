@@ -80,6 +80,12 @@ loadScripts(document, 'script');</script>
 <div class="horizontal-scroll">
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Db</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Provides database connection access for the POS system.
+
+This class loads database credentials from a .env file using the Dotenv library
+and exposes a single method for retrieving a JDBC Connection. It centralizes
+database configuration so that other DAO classes can easily obtain connections
+without duplicating connection logic.</div>
 </div>
 </section>
 <section class="summary">
@@ -110,7 +116,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getConnection()" class="member-name-link">getConnection</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Creates and returns a new JDBC connection using the configured URL, username, and password.</div>
+</div>
 </div>
 </div>
 </div>
@@ -149,6 +157,13 @@ loadScripts(document, 'script');</script>
 <h3>getConnection</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a></span>&nbsp;<span class="element-name">getConnection</span>()</div>
+<div class="block">Creates and returns a new JDBC connection using the configured URL, username, and password.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A valid JDBC Connection object.</dd>
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">RuntimeException</a></code> - If the connection attempt fails for any reason.</dd>
+</dl>
 </div>
 </section>
 </li>
