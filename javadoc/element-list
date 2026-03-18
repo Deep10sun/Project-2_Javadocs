@@ -1,0 +1,8 @@
+org.posSystem.FrontendGUI.CashierGUI
+org.posSystem.FrontendGUI.InventoryGUI
+org.posSystem.FrontendGUI.ManagerGUI
+org.posSystem.FrontendGUI.ManagerGUI.controller
+org.posSystem.FrontendGUI.ManagerGUI.dao
+org.posSystem.FrontendGUI.ManagerGUI.db
+org.posSystem.FrontendGUI.ManagerGUI.model
+org.posSystem.util
